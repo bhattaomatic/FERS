@@ -16,7 +16,7 @@ ENDIF()
 #Set compiler flags
 IF (CMAKE_COMPILER_IS_GNUCXX)
    MESSAGE(STATUS "Setting general compiler flags for detected compiler: gnu-g++")	
-   SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -pthread -ffast-math")
+   SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -pthread -ffast-math -I/usr/include/hdf5/serial/")
 
     IF(CMAKE_BUILD_TYPE MATCHES "Release")
     
